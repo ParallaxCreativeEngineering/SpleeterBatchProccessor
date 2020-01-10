@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+cd ~/Desktop/dopesplit/presplit
+
+find . -type f -exec rename 's/[^0-9A-Za-z.\/]/-/g;s/-+/-/g' {} \;
+rename -z *
